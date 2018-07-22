@@ -1,0 +1,49 @@
+<!-- <mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark black" [containerInside]="false"> -->
+<mdb-navbar SideClass="custom-navbar navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar intro-fixed-nav" [containerInside]="false">
+
+    <logo class="wow fadeInUp" data-wow-delay="0.3s">
+        <a class="logo navbar-brand animated bounce infinite" routerLink="">
+            <strong>
+                <img [src]="image" width="250px" height="50px"> 
+            </strong>
+        </a>
+    </logo>
+    <links class="wow fadeInUp" data-wow-delay="0.6s">
+        <ul class="navbar-nav mr-auto custom-menu">
+            <li class="nav-item waves-light" mdbRippleRadius>
+                <a class="nav-link" routerLink="/trang-chu">TRANG CHỦ</a>
+            </li>
+            <li class="nav-item waves-light" mdbRippleRadius>
+                <a class="nav-link" routerLink="/gioi-thieu">GIỚI THIỆU</a>
+            </li>
+            <li class="nav-item waves-light" mdbRippleRadius>
+                <a class="nav-link" routerLink="/huong-dan">ĐẶT XE</a>
+            </li>
+            <li class="nav-item waves-light" mdbRippleRadius>
+                <a class="nav-link" routerLink="/lien-he">LIÊN HỆ</a>
+            </li>
+        </ul>
+
+
+        <ul class="navbar-nav nav-flex-icons">
+            <li class="nav-item">
+                <a class="nav-link waves-light" (click)="loginModal.show()">
+                    <i class="fa fa-sign-in" aria-hidden="true"></i>
+                    <span class="clearfix d-none d-sm-inline-block">Đăng Nhập</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link waves-light" routerLink="register">
+                    <i class="fa fa-user-plus" aria-hidden="true"></i>
+                    <span class="clearfix d-none d-sm-inline-block">Đăng ký</span>
+
+                </a>
+            </li>
+
+        </ul>
+
+    </links>
+</mdb-navbar>
+<br>
+<br>
+<br>
